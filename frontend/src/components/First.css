@@ -1,0 +1,7 @@
+.allApp {
+    display: flex;
+}
+
+.allApp > div {
+    margin: 70px
+}
