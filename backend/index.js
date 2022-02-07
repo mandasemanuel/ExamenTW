@@ -17,15 +17,15 @@ app.use((error, request, response, next) => {
     response.status(500).json(error);
 });
 
-app.use("/app", require("./routes/firsts"))
+app.use("/app", require("./routes/movies"))
 
 app.listen(8080, async () => {
     console.log('Server started on http://localhost:8080');
     try {
         await sequelize.authenticate();
-        // await sequelize.sync({alter: true}).then( () => {
-        //     console.log("All models were syncronized succesfully");
-        // })
+        await sequelize.sync({alter: true}).then( () => {
+            console.log("All models were syncronized succesfully");
+        })
         console.log("Connection has been established succesfully");
     } catch (err) {
         console.error("Unable to connect to the database: ", error);

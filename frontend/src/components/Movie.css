@@ -1,0 +1,15 @@
+.allApp {
+    display: flex;
+}
+
+.allApp > div {
+    margin-left: 70px
+}
+
+.sortFilter {
+    display: flex;
+}
+
+.sortFilter > label {
+    margin: 10px
+}

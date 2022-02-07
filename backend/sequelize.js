@@ -8,8 +8,8 @@ const sequelize = new Sequelize({
 	}
 });
 
-sequelize.sync({alter: true}).then( () => {
-    console.log("All models were syncronized succesfully");
-})
+// sequelize.sync({alter: true}).then( () => {
+//     console.log("All models were syncronized succesfully");
+// })
 
 module.exports = sequelize;

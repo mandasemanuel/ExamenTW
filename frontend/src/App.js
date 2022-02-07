@@ -1,11 +1,11 @@
-import First from "./components/First";
+import Movie from "./components/Movie";
 
 
 function App() {
   return (
     <div>
-      Saloot
-      <First />
+      Mandas Emanuel, seria D, grupa 1086
+      <Movie />
     </div>
   );
 }
